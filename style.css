@@ -1,0 +1,757 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+:root {
+  --color-background-nav: #0b9586;
+  --color-primiry: #ffbb1c;
+  --color-arrow-right: #3cab90;
+  --color-p: #475467;
+  --color-background-cards: #3cab8f10;
+}
+
+nav {
+  background: var(--color-background-nav);
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* left side of navbar */
+
+.left_side_navbar {
+  display: flex;
+  align-items: center;
+  flex-grow: 8;
+}
+
+.left_side_navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: 10%;
+}
+
+.left_side_navbar li {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.left_side_navbar li:hover {
+  background-color: rgba(0, 0, 0, 0.158);
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.39);
+}
+
+.active_li {
+  background-color: rgba(0, 0, 0, 0.158);
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.39);
+}
+
+/* Right side of navbar */
+
+.right-side-navbar {
+  text-align: end;
+}
+
+.right-side-navbar h4 {
+  font-weight: 100;
+}
+
+/* 
+=============================
+    Header
+=============================
+*/
+
+header {
+  background-image: url(./Public/solar-panels-meadow\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+}
+
+.container_header {
+  width: 80%;
+  margin: auto;
+  padding-top: 8%;
+  color: white;
+}
+
+/* box header */
+
+.box_header {
+  width: 60%;
+}
+
+/* slider header  */
+
+.slider_header {
+  display: flex;
+  align-items: center;
+}
+
+.slider_in {
+  border: 1px solid;
+  width: 35%;
+  height: 1px;
+  background-color: white;
+}
+
+.slider_out {
+  margin: 0 30px;
+  width: 35%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+/*  Header h1 , p , buttons */
+
+header h1 {
+  margin-top: 15%;
+  font-size: 3rem;
+}
+
+header p {
+  margin-top: 7%;
+  font-size: 1.3rem;
+}
+
+.buttons_header {
+  margin-top: 7%;
+}
+
+.buttons_header button:nth-child(1) {
+  all: unset;
+  background-color: var(--color-background-nav);
+  padding: 13px 50px;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.822);
+  margin-right: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.buttons_header button:nth-child(1):hover {
+  background-color: #0b867885;
+}
+
+.buttons_header button:nth-child(2) {
+  all: unset;
+  background-color: var(--color-primiry);
+  padding: 13px 50px;
+  border-radius: 15px;
+  color: black;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.buttons_header button:nth-child(2):hover {
+  background-color: #ffbb1c94;
+}
+
+/* 
+=============================
+ Section of rectangle
+==============================
+*/
+
+.section_rectangle {
+  display: flex;
+  width: 80%;
+  margin: 10% auto;
+}
+
+.left_side_section_rectangle {
+  width: 55%;
+}
+
+.left_side_section_rectangle h1 {
+  font-size: 2.7rem;
+}
+
+.left_side_section_rectangle p {
+  margin-top: 7%;
+  opacity: 0.7;
+}
+
+.left_side_section_rectangle ol {
+  margin-top: 8%;
+  list-style: none;
+}
+
+.left_side_section_rectangle li {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.left_side_section_rectangle li span {
+  color: #84bd3a;
+  margin-right: 10px;
+}
+
+/* right side "Back Ground rectangle" */
+
+.right_side_section_rectangle {
+  position: relative;
+  width: 45%;
+  height: 55vh;
+}
+
+.background_rectangle {
+  background-image: url(./Public/Rectangle\ 30.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.card {
+  position: absolute;
+  background-color: var(--color-primiry);
+  width: 50%;
+  border-radius: 11px;
+  padding: 25px;
+  bottom: 15px;
+  left: -50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.card h3 {
+  margin-top: 20px;
+}
+
+/* 
+=============================
+ Section of Call Us
+==============================
+*/
+
+.section_callus {
+  background-image: url(./Public/8116\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.container_callus {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.container_callus h1 {
+  font-size: 2.5rem;
+}
+
+.container_callus h5 {
+  margin-top: 3%;
+  font-size: 1.1rem;
+  font-weight: normal;
+  width: 50%;
+}
+
+.container_callus button {
+  all: unset;
+  margin-top: 3%;
+  background-color: var(--color-primiry);
+  padding: 13px 50px;
+  border-radius: 15px;
+  color: black;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.container_callus button:hover {
+  background-color: #ffbb1c94;
+}
+
+/* 
+=============================
+ Section of Solar Kits Panels
+==============================
+*/
+
+.section_solar {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.section_solar h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section_solar h5 {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Cards Solar Panel */
+
+.card_solras_panels {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.section_solar article {
+  width: 30%;
+  height: fit-content;
+}
+
+.card_solar_image {
+  width: 100%;
+}
+
+article div {
+  padding: 10px;
+}
+
+article div p {
+  margin: 5% 0;
+}
+
+article div a {
+  all: unset;
+  display: flex;
+  align-items: center;
+  color: var(--color-arrow-right);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+article div a img {
+  text-align: center;
+  margin-left: 15px;
+  transform: scale(1.2);
+}
+
+/* 
+=============================
+Section of Solar Kits Panels
+==============================
+*/
+
+.section_repairs {
+  background-image: url(./Public/8116\ 1\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_repairs div {
+  background-color: #0000009c;
+  width: 60%;
+  margin: auto;
+  padding: 50px 30px;
+  color: white;
+  text-align: center;
+  border-radius: 11px;
+}
+
+.section_repairs div h1 {
+  font-size: 2.5rem;
+}
+
+.section_repairs div p {
+  margin-top: 5%;
+  font-size: 1.2rem;
+}
+
+/* 
+=============================
+Section of Energy
+==============================
+*/
+
+.section_energy {
+  background-color: #ffbb1c25;
+}
+
+.container_section_energy {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 5% 0;
+}
+
+.zap_fast {
+  width: 60px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 13px;
+  background-color: var(--color-background-cards);
+  color: var(--color-arrow-right);
+}
+
+.background_zab_fast {
+  background-color: var(--color-arrow-right);
+  width: 100%;
+  height: 60px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Left Energy Section */
+
+.left_energy_section {
+  width: 35%;
+}
+
+.left_energy_section h1 {
+  font-size: 2.5rem;
+  margin-top: 3%;
+}
+
+.left_energy_section p {
+  margin-top: 3%;
+  color: var(--color-p);
+}
+
+/* Energy Boxs */
+
+.energy_boxs {
+  width: 65%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.energy_boxs article {
+  position: relative;
+  border: 1px solid var(--color-arrow-right);
+  border-radius: 13px;
+  background-color: var(--color-background-cards);
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.frame_box {
+  width: 100%;
+}
+
+.energy_boxs article h2 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.energy_boxs article p {
+  margin-top: 10px;
+  color: var(--color-p);
+}
+
+.energy_boxs article a {
+  all: unset;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  color: var(--color-arrow-right);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.energy_boxs article a img {
+  margin-left: 10px;
+}
+
+/* 
+=============================
+Section of Our Value
+==============================
+*/
+
+.section_ourvalue {
+  width: 80%;
+  margin: 7% auto;
+}
+
+.section_ourvalue h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.article_parag {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--color-p);
+}
+
+.articles_ourvalues {
+  display: flex;
+  margin-top: 3%;
+}
+
+.articles_ourvalues article {
+  border: 1px solid var(--color-arrow-right);
+  border-radius: 13px;
+  background-color: var(--color-background-cards);
+  padding: 20px;
+  text-align: start;
+  margin: 0 10px;
+}
+
+.articles_ourvalues article img {
+  margin-top: 10px;
+}
+
+.articles_ourvalues article h3 {
+  margin-top: 15px;
+}
+
+.articles_ourvalues article p {
+  margin-top: 30px;
+  color: var(--color-p);
+}
+
+/* 
+=============================
+Section of About Us
+==============================
+*/
+
+.section_aboutus {
+  width: 80%;
+  margin: 10% auto;
+  display: flex;
+  align-items: center;
+}
+
+.left_side_aboutus {
+  width: 35%;
+}
+
+.left_side_aboutus div {
+  background-image: url(./Public/“.svg);
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.left_side_aboutus h1 {
+  font-size: 2.5rem;
+}
+
+.left_side_aboutus p {
+  margin-top: 5%;
+}
+
+.right_side_aboutus {
+  width: 65%;
+  padding: 40px;
+  border-radius: 13px;
+  background-color: var(--color-background-cards);
+}
+
+.top_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_card div:nth-child(1) {
+  color: var(--color-arrow-right);
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #4f4f4f;
+}
+
+.right_side_aboutus p {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.bottom_card {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_card div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+.bottom_card div:nth-child(1) div {
+  margin-left: 10px;
+}
+
+.bottom_card div:nth-child(1) div h5 {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+.bottom_card div:nth-child(1) div h6 {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.bottom_card div:nth-child(2) span {
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 
+=============================
+    Footer
+==============================
+*/
+
+footer {
+  background-color: #283646;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer li {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.container_footer {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0 40px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer div:nth-child(1) img {
+  margin-bottom: 50px;
+}
+
+footer hr {
+  margin-top: 40px;
+  background-color: var(--color-p);
+  color: var(--color-p);
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 50px;
+  width: 400px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 10px 30px;
+  border: 1px solid #b0b0b0;
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+  font-size: 16px;
+  outline: none;
+  color: #fff;
+  background-color: #3f4f5f;
+}
+
+.subscribe-button {
+  padding: 10px 30px;
+  background-color: #f9b233;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #e0a020;
+}
+
+/* 
+=============================
+          Responsive 
+==============================
+ */
+
+/* Styles for tablets */
+/* @media (min-width: 768px) and (max-width: 1103px) { */
+/* .container{
+    flex-wrap: wrap;
+  } */
+/* } */
+
+/* Styles for mobile devices */
+/* @media (max-width: 767px) {
+  
+} */
