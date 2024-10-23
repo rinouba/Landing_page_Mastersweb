@@ -14,7 +14,9 @@
 
 nav {
   background: var(--color-background-nav);
+  text-align: center;
 }
+
 
 .container {
   width: 80vw;
@@ -24,6 +26,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: white;
+  flex-wrap: wrap;
 }
 
 /* left side of navbar */
@@ -323,6 +326,7 @@ header p {
 .card_solras_panels {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 5% 0;
 }
 
@@ -360,7 +364,7 @@ article div a img {
 
 /* 
 =============================
-Section of Solar Kits Panels
+Section of repairs
 ==============================
 */
 
@@ -667,6 +671,7 @@ Section of About Us
 footer {
   background-color: #283646;
   color: white;
+  width: 100%;
 }
 
 footer ul {
@@ -745,13 +750,346 @@ footer hr {
  */
 
 /* Styles for tablets */
-/* @media (min-width: 768px) and (max-width: 1103px) { */
-/* .container{
-    flex-wrap: wrap;
-  } */
-/* } */
+@media (max-width: 1103px) {
+
+/* 
+=============================
+        Nav Bar
+==============================
+*/
+
+  .container{
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+  }
+
+  .left_side_navbar{
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .left_side_navbar ul{
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .left_side_navbar li{
+    margin: 20px 0;
+  }
+  
+  .right-side-navbar{
+    width: 95%;
+    text-align: center;
+  }
+
+  /* 
+=============================
+          Header 
+==============================
+ */
+  header{
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+
+  .container_header{
+    width: 95%;
+    text-align: center;
+  }
+
+  .box_header{
+    width: 95%;
+  }
+
+  .slider_header{
+    justify-content: center;
+  }
+
+/* 
+=============================
+    Section of rectangle
+==============================
+*/
+.section_rectangle{
+  width: 95%;
+  flex-direction: column;
+}
+
+.left_side_section_rectangle{
+  width: 100%;
+}
+
+.right_side_section_rectangle{
+  width: 100%;
+}
+
+.card{
+  bottom: -30px;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+}
+
+/* 
+=============================
+ Section of Call Us
+==============================
+*/
+
+.section_callus{
+  text-align: center;
+}
+
+.container_callus{
+  width: 95%;
+}
+
+.container_callus h5{
+  width: 100%;
+}
+
+/* 
+=============================
+ Section of Solar Kits Panels
+==============================
+*/
+.section_solar{
+  width: 95%;
+}
+
+.card_solras_panels{
+  flex-direction: column;
+}
+
+.section_solar article{
+  width: 100%;
+}
+/* 
+=============================
+Section of repairs
+==============================
+*/
+
+.section_repairs div{
+  width: 90%;
+  padding: 20px 10px;
+}
+
+.section_repairs div h1{
+  font-size: 1.8rem;
+}
+
+.section_repairs div p{
+  font-size: 1rem;
+}
+
+/* 
+=============================
+Section of Energy
+==============================
+*/
+
+.container_section_energy{
+  flex-direction: column;
+  width: 95%;
+}
+
+.zap_fast{
+  margin: auto;
+}
+
+.left_energy_section{
+  width: 100%;
+  text-align: center;
+}
+
+/* Energy Boxs */
+.energy_boxs {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0;
+}
+/* 
+=============================
+Section of Our Value
+==============================
+*/
+.section_ourvalue{
+  width: 95%;
+}
+
+.articles_ourvalues{
+flex-direction: column;
+}
+
+.articles_ourvalues article{
+margin: 10px 0;
+}
+
+/* 
+=============================
+Section of About Us
+==============================
+*/
+
+
+.section_aboutus{
+  width: 95%;
+}
+
+/* 
+=============================
+    Footer
+==============================
+*/
+
+.container_footer{
+  width: 95%;
+}
+
+
+footer ul {
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+footer li{
+  margin-top: 10px;
+  margin-right: 0;
+  font-size: 1.5rem;
+}
+
+.footer div:nth-child(1){
+  text-align: center;
+}
+
+.footer div:nth-child(2){
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer{
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-container{
+  width: 100%;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.footer div:nth-child(1) img {
+  margin-bottom: 10px;
+}
+
+}
 
 /* Styles for mobile devices */
-/* @media (max-width: 767px) {
+@media (max-width: 768px) {
   
-} */
+/* 
+=============================
+          Header 
+==============================
+*/
+
+header{
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.buttons_header button{
+  margin-top: 20px !important;
+}
+
+
+/* 
+=============================
+Section of repairs
+==============================
+*/
+
+.section_repairs div h1{
+  font-size: 1rem;
+}
+
+.section_repairs div p{
+  font-size: 0.7rem;
+}
+
+/* 
+=============================
+Section of Energy
+==============================
+*/
+.energy_boxs {
+  width: 90%;
+  margin-top: 20px;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+.energy_boxs article{
+ width: 100%;
+}
+
+/* 
+=============================
+Section of About Us
+==============================
+*/
+
+.section_aboutus{
+  flex-direction: column;
+}
+
+.left_side_aboutus{
+  width: 95%;
+  text-align: center;
+}
+
+.right_side_aboutus{
+  width: 85%;
+  margin-top: 20px;
+}
+
+.bottom_card{
+  flex-direction: column;
+}
+
+.bottom_card div:nth-child(2){
+  margin-top: 30px;
+}
+
+/* 
+=============================
+    Footer
+==============================
+*/
+
+.subscribe-container{
+  flex-direction: column;
+}
+
+.email-input{
+  border-radius: 50px;
+}
+
+.subscribe-button{
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+}
