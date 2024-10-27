@@ -475,6 +475,7 @@ Section of Energy
 
 .frame_box {
   width: 100%;
+  mix-blend-mode: luminosity;
 }
 
 .energy_boxs article h2 {
